@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=DM+Sans&family=Kanit:ital,wght@0,200;0,300;0,400;1,200;1,300;1,500&family=Libre+Franklin:wght@200;300;400;500&family=Merriweather:ital,wght@1,300;1,400;1,700&family=Philosopher:wght@400;700&family=Ysabeau+Infant:wght@200;300;400;600&display=swap');
+
+body{
+    font-family: 'Ysabeau Infant', sans-serif;
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+/* start header */
+
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+ .navbar img{
+    margin-left: 50px;
+    width:120px;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-right:50px;
+}
+.nav ul img{
+    width:35px; 
+    height:35px;
+}
+.container .navbar ul li{
+    padding: 0 25px;
+}
+.container .navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+.container .navbar ul li a:hover{
+    border-bottom: 2px solid #ffc10e; 
+
+}
+
+/* end header */
+
+/* start row */
+.row{
+    background-color: #ffc10e;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col-1 ,
+.row .col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+.row .col-1 h1{
+    font-size: 60px;
+    opacity: 75%;
+}
+.row .col-1 p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    opacity: 75%;
+}
+.row .col-1 input{
+    text-decoration: none;
+    padding: 10px  15px; ;
+    border-radius: 15px;
+    background-color: white;
+    color: #000000; 
+    border: none;
+    outline: none;
+    width: 100%px;
+}
+.row .col-2 img{
+    width:500px;
+}
+
+
+/* end row */
+
+/* products start */
+#Product{
+    height:auto;
+    display: flex;
+    justify-content: center;
+    background-color: wheat;;
+}
+#Product .title-product{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 35px;
+    opacity: 50%;
+}
+
+#Product .items-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 7rem
+}
+#Product .items-product img{
+    width: 150px;
+    transition: 0.2s;
+}
+#Product .items-product img:hover{
+    width: 170px
+}
+#Product .items-product span{
+    color: #755903;
+}
+
+.pra{
+    margin: 0 40px;
+}
+
+
+/* products end */
+/* contant start */
+.contant{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contant .ih-footer{
+    margin-top: 5px;
+}
+.contant .ih-footer a{
+    margin: 10px;
+    color: #000000;
+}
+/* contant end */
+/* media start */
+
+@media(max-width:950px){
+    #Product .items-product img {
+        width: 115px;
+    }
+}
+@media(max-width:875px){
+   
+.container .navbar {
+    display: block;
+    text-align: center;
+}
+.navbar img {
+    margin-left: -13px;
+    width: 252px;
+}
+.nav ul {
+    width: 76%;
+    margin: auto;
+}
+.container .navbar ul li a{
+    font-size: 40px;
+}
+.nav ul img {
+    width: 75px;
+    height: 76px;
+}
+
+.row {
+    display: block;
+    height: auto;
+}
+.row .col-1 h1 {
+    font-size: 83px;
+    opacity: 75%;
+}
+.row .col-1, .row .col-2 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+.row .col-2{
+    margin-left: 13rem;
+}
+.row .col-2 img{
+    width: 800px;
+}
+.row .col-2 {
+    margin-top: -71px;
+    margin-left: 0rem;
+}
+
+}
+@media(max-width:800px){
+    .nav ul {
+        display: block;
+    }
+    
+.container .navbar ul li {
+    padding: 20px 25px;
+}
+.row .col-1 input{
+    width: 85%;
+    margin: auto;
+}
+    #Product .items-product {
+        display: block;
+    }
+    .item{
+        margin-bottom: 7rem;
+    }
+    #Product .items-product img {
+        width: 188px;
+    }
+    #Product .items-product img:hover{
+        width: 210px;
+    }
+    .item .pra h4,
+    .item .pra p{
+        font-size: 25px;
+    }
+}
+
+
+/* media end */
